@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spice Delight Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar (Flexbox) -->
+<header>
+    <nav class="navbar">
+        <h1>🍽️ Spice Delight</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reserve">Reservation</a></li>
+            <li><a href="#order">Order List</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="hero">
+    <h2>Welcome to Spice Delight</h2>
+    <p>Fresh • Tasty • Delicious</p>
+</section>
+
+<!-- Menu Section (CSS Grid) -->
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+        <div class="food-card">🍛 Veg Biryani - ₹120</div>
+        <div class="food-card">🍗 Chicken Biryani - ₹180</div>
+        <div class="food-card">🍕 Pizza - ₹150</div>
+        <div class="food-card">🥤 Fresh Juice - ₹60</div>
+    </div>
+</section>
+
+<!-- Reservation Form -->
+<section id="reserve" class="form-section">
+    <h2>Book a Table</h2>
+    <form id="reservationForm">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="text" id="guests" placeholder="Number of Guests">
+        <button type="submit">Reserve</button>
+    </form>
+    <p id="formMessage"></p>
+</section>
+
+<!-- Order List (DOM Manipulation) -->
+<section id="order" class="order-section">
+    <h2>Online Order List</h2>
+    <input type="text" id="taskInput" placeholder="Enter food item">
+    <button onclick="addTask()">Add Order</button>
+    <ul id="taskList"></ul>
+</section>
+
+<footer>
+    <p>📍 Hyderabad | 📞 +91 98765 43210</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

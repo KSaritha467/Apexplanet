@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+}
+
+/* Flexbox Navbar */
+.navbar {
+    background-color: #b22222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.food-card {
+    background-color: #ffe4c4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Reservation Form */
+.form-section {
+    text-align: center;
+    padding: 30px;
+}
+
+form input, form button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 250px;
+}
+
+/* Order Section */
+.order-section {
+    text-align: center;
+    padding: 30px;
+}
+
+#taskList li {
+    list-style: none;
+    background: #ffd6a5;
+    margin: 5px auto;
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #b22222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
