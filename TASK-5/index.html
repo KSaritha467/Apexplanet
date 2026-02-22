@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amazon Style Final Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+
+<div id="auth" class="center">
+<div class="glass">
+<h2 id="title">Login</h2>
+<input id="email" placeholder="Email">
+<input id="pass" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<p id="switch" onclick="toggle()">Create Account</p>
+</div>
+</div>
+
+
+<!-- APP -->
+
+<div id="app" class="hide">
+
+<div class="sidebar">
+<h2>🛒Store</h2>
+<a onclick="page('home')">Home</a>
+<a onclick="page('cart')">Cart <span id="badge">0</span></a>
+<a onclick="page('orders')">Orders</a>
+<a onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+
+<header>
+
+<input id="search"
+placeholder="Search Products"
+onkeyup="filter()">
+
+<div class="right">
+
+<button onclick="dark()">🌙</button>
+
+<img class="avatar"
+src="https://i.pravatar.cc/40">
+
+</div>
+
+</header>
+
+
+<section id="home">
+
+<div id="products"
+class="grid"></div>
+
+</section>
+
+
+<section id="cart"
+class="hide">
+
+<h2>Cart</h2>
+
+<div id="cartItems"></div>
+
+</section>
+
+
+<section id="orders"
+class="hide">
+
+<h2>Order History</h2>
+
+<ul id="orderList"></ul>
+
+</section>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
